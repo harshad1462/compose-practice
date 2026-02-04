@@ -20,7 +20,7 @@ pipeline {
     stage("Set Image Tag") {
       steps {
         script {
-          COMMIT_TAG = sh(
+        def COMMIT_TAG = sh(
             script: "git rev-parse --short HEAD",
             returnStdout: true
           ).trim()
