@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    DOCKERHUB_USER = "harshsad06"
+    DOCKERHUB_USER = "harshad06"
     BACKEND_IMAGE  = "login-backend"
     FRONTEND_IMAGE = "login-frontend"
     COMPOSE_FILE   = "docker-compose.yml"
