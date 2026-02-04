@@ -13,7 +13,7 @@ services:
       - appnet
 
   backend:
-    build: ./backend
+    image: harshad06/login-backend:latest
     ports:
       - "4000:4000"
     depends_on:
@@ -22,7 +22,7 @@ services:
       - appnet
 
   frontend:
-    build: ./frontend
+    image: harshad06/login-frontend:latest
     ports:
       - "3000:80"
     depends_on:
