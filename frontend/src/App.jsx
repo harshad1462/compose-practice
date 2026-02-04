@@ -27,6 +27,7 @@ function App() {
 
   return (
     <div style={{ padding: "20px" }}>
+      <h1>simple login page</h1>
       <h2>Login App</h2>
 
       <input
