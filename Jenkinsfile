@@ -61,6 +61,12 @@ pipeline {
   }
 }
 
+stage("Approve Deployment") {
+  steps {
+    input message: "Approve deployment to production?",
+          ok: "Deploy"
+  }
+}
 
     stage("Deploy Using Docker Compose") {
       steps {
